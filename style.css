@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Elegante</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    form h1 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #333;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 500;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="time"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background-color: #2dc520;
+      transition: border-color 0.3s;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: #ffffff;
+      outline: none;
+    }
+
+    .genero-group {
+      margin-bottom: 15px;
+    }
+
+    .genero-group label {
+      font-weight: normal;
+      margin-right: 10px;
+    }
+
+    .genero-group input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #32c01f;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <form action="">
+    <h1>Formulario de Registro</h1>
+
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+    <label for="correo">Correo Electrónico</label>
+    <input type="email" id="correo" name="correo" placeholder="Escribe tu correo" required>
+
+    <label for="contraseña">Contraseña</label>
+    <input type="password" id="contraseña" name="contraseña" placeholder="Escriba su contraseña" required>
+
+    <label for="edad">Edad</label>
+    <input type="number" id="edad" name="edad" placeholder="Escribe tu edad" required>
+
+    <label for="telefono">Teléfono</label>
+    <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu teléfono">
+
+    <label for="fecha">Fecha de Nacimiento</label>
+    <input type="date" id="fecha" name="fecha">
+
+    <label for="hora">Hora</label>
+    <input type="time" id="hora" name="hora">
+
+    <p>Género</p>
+    <div class="genero-group">
+      <label><input type="radio" id="femenino" name="genero" value="femenino">Femenino</label>
+      <label><input type="radio" id="masculino" name="genero" value="masculino">Masculino</label>
+      <label><input type="radio" id="otro" name="genero" value="otro">Otro</label>
+    </div>
+
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Formulario Elegante</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px; /* para que no toque bordes en móvil */
+    }
+
+    form {
+      background-color: #fff;
+      padding: 40px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    form h1 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #333;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 500;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="time"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background-color: #fafafa;
+      transition: border-color 0.3s;
+      font-size: 16px;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: #007BFF;
+      outline: none;
+    }
+
+    .genero-group {
+      margin-bottom: 15px;
+    }
+
+    .genero-group label {
+      font-weight: normal;
+      margin-right: 15px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .genero-group input[type="radio"] {
+      margin-right: 5px;
+      vertical-align: middle;
+      cursor: pointer;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Media queries para pantallas pequeñas */
+    @media (max-width: 480px) {
+      form {
+        padding: 30px 20px;
+        max-width: 100%;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      input[type="number"],
+      input[type="tel"],
+      input[type="date"],
+      input[type="time"],
+      textarea {
+        font-size: 14px;
+        padding: 8px;
+      }
+      button {
+        font-size: 14px;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <form action="">
+    <h1>Formulario de Registro</h1>
+
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required />
+
+    <label for="correo">Correo Electrónico</label>
+    <input type="email" id="correo" name="correo" placeholder="Escribe tu correo" required />
+
+    <label for="contraseña">Contraseña</label>
+    <input type="password" id="contraseña" name="contraseña" placeholder="Escriba su contraseña" required />
+
+    <label for="edad">Edad</label>
+    <input type="number" id="edad" name="edad" placeholder="Escribe tu edad" required />
+
+    <label for="telefono">Teléfono</label>
+    <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu teléfono" />
+
+    <label for="fecha">Fecha de Nacimiento</label>
+    <input type="date" id="fecha" name="fecha" />
+
+    <label for="hora">Hora</label>
+    <input type="time" id="hora" name="hora" />
+
+    <p>Género</p>
+    <div class="genero-group">
+      <label><input type="radio" id="femenino" name="genero" value="femenino" />Femenino</label>
+      <label><input type="radio" id="masculino" name="genero" value="masculino" />Masculino</label>
+      <label><input type="radio" id="otro" name="genero" value="otro" />Otro</label>
+    </div>
+
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
